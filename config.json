@@ -3,12 +3,12 @@
     "prefix": "!",
     "genChannel": "1056969543077089331",
     "pgenChannel": "1059464775559561316",
-    "genCooldown": "1000",
+    "genCooldown": "0",
     "color": {
         "green": "0x57F287",
         "yellow": "0xFEE75C",
         "red": "0xED4245",
-        "default": "0x5865F2"
+        "default": "be31af"
     },
     "command": {
         "notfound_message": true,
