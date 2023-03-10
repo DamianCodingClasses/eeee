@@ -86,9 +86,9 @@ module.exports = {
                         message.author.send(
                             new Discord.MessageEmbed()
                             .setColor(config.color.green)
-                            .setTitle('Generated account')
+                            .setTitle('Generated Service')
                             .addField('Service', `\`\`\`${args[0][0].toUpperCase()}${args[0].slice(1).toLowerCase()}\`\`\``, true)
-                            .addField('Account', `\`\`\`${firstLine}\`\`\``, true)
+                            .addField('Account Details', `\`\`\`${firstLine}\`\`\``, true)
                             .setTimestamp()
                         ).then(message.author.send('Here is your copy+paste:')).then(message.author.send(`\`${firstLine}\``));
 
@@ -101,7 +101,7 @@ module.exports = {
                                 message.channel.send(
                                     new Discord.MessageEmbed()
                                     .setColor(config.color.green)
-                                    .setTitle('Account generated seccessfully!')
+                                    .setTitle('Service Succesfully Generated!')
                                     .setDescription(`Check your private ${message.author}! *If you do not recieved the message, please unlock your private!*`)
                                     .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true, size: 64 }))
                                     .setTimestamp()
@@ -121,7 +121,7 @@ module.exports = {
                             return message.channel.send(
                                 new Discord.MessageEmbed()
                                 .setColor(config.color.red)
-                                .setTitle('Generator error!')
+                                .setTitle('Generator Error!')
                                 .setDescription(`The \`${args[0]}\` service is empty!`)
                                 .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true, size: 64 }))
                                 .setTimestamp()
