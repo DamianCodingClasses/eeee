@@ -101,7 +101,7 @@ module.exports = {
                                 message.channel.send(
                                     new Discord.MessageEmbed()
                                     .setColor(config.color.green)
-                                    .setTitle('Service Succesfully Generated!')
+                                    .setTitle('Service Successfully Generated!')
                                     .setDescription(`Check your private ${message.author}! *If you do not recieved the message, please unlock your private!*`)
                                     .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true, size: 64 }))
                                     .setTimestamp()
