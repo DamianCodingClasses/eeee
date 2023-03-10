@@ -86,9 +86,9 @@ module.exports = {
                         message.author.send(
                             new Discord.MessageEmbed()
                             .setColor(config.color.green)
-                            .setTitle('Service Generated!')
+                            .setTitle('Service Generated Successfully!')
                             .addField('Service:', `\`\`\`${args[0][0].toUpperCase()}${args[0].slice(1).toLowerCase()}\`\`\``, true)
-                            .addField('Account:', `\`\`\`${firstLine}\`\`\``, true)
+                            .addField('Account Details:', `\`\`\`${firstLine}\`\`\``, true)
                             .setTimestamp()
                         ).then(message.author.send('Copy + Paste:')).then(message.author.send(`\`${firstLine}\``));
 
